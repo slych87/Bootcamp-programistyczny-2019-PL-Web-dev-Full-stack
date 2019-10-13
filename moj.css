@@ -1,0 +1,100 @@
+body{
+    --glowny-kolor: rgb(94, 218, 90);
+}
+
+header #nasztytul{
+    font-family: Arial;;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2em;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+/*inline = 1000, Id = 100, class = 10, elementy = 1*/
+
+
+article{
+    position: relative;
+    
+}
+
+#par{
+    border: 10px solid var(--glowny-kolor);
+    border-style: double;
+    padding: 50px;
+    width: 50%;  
+    color: white;
+    border-radius: 50%;
+    float: left;
+    
+    background: linear-gradient(180deg, rgb(184, 184, 184), rgb(79,79,79));
+ }
+#par p::first-letter{
+    color: var(--glowny-kolor);
+    font-size: 35px
+}
+#test2, #test3{
+    background-color: grey ;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 10px;
+    color: white;
+    box-shadow: 10px 10px 5px var(--glowny-kolor), -10px -10px 0 var(--glowny-kolor); 
+    border-radius: 10px;
+    float: left;
+    clear: both;
+}
+a:hover{
+    color: var(--glowny-kolor);
+}R
+
+a:visited{
+    color: green;
+}
+
+img{
+    float: left;
+}
+#naszheader{
+
+    height: 300px;
+    border: 1px solid var(--glowny-kolor);
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100px auto auto auto ;
+    grid-template-rows:auto 100px;
+}
+.number{
+background-color: royalblue;
+border: 3px solid black;
+}
+.alternatywna{
+    background-color: coral;
+}
+
+@keyframes probna {
+    0% {background-color: var(--glowny-kolor); width: 100px;}
+    50% {background-color: yellow; width: 100px;}
+    100% {background-color: green; width: 200px;}
+}
+
+
+#test5{
+    width: 100px;
+    height: 100px;
+    background-color: var(--glowny-kolor);
+
+}
+#test5:hover{
+    width: 200px;
+    animation-name: probna;
+    animation-duration: 4s;
+}
+#tytul > a{
+    color: red;
+}
+*{
+    margin:0;
+    padding: 0;
+}
